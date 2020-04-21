@@ -37,7 +37,7 @@ def main():
             #BACKGROUND CLASS DISPLAYS THE BACKGROUND IMAGE AND THE SOUND FOR PLAY>>
             username = bg.User()                                                                #This is responsible for getting the username from the user,.
             bg.screen(backgroundImage,gameDisplay)
-            bg.music("Music/background_home.wav")
+            bg.music("Music/background_home.mp3")
             #Writes Options Text on Screen with starting X = 20;
             
             #THIS LOOP IS CONTINOUS WAITING FOR USER REPLIES
@@ -84,7 +84,7 @@ def main():
                                                             if bg.CursorIndex() == 1:                
                                                                         gameObj.destructor() 
                                                                         pygame.mixer.music.pause()
-                                                                        bg.music("Music/background_game.wav")
+                                                                        bg.music("Music/background_game.mp3")
                                                                         GameScreen( gameObj ,username)                             #Calling game module to display game 
                                                                         bg.screen(backgroundImage,gameDisplay)                      #Returning and showing default screen.
                                                                         bg.music("Music/background_home.wav")
